@@ -125,5 +125,5 @@ npm WARN babel-loader@6.3.2 requires a peer of babel-core@^6.0.0 but none was in
 npm install babel-core --save
 ```
 
-这样我们安装好了这个loader，于是我们终于可以开始开发基于vue的第一个的**hello world**了。
+这样我们安装好了这个loader，于是我们终于可以开始开发基于vue的第一个**hello world**了。
 
