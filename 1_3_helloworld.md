@@ -39,7 +39,7 @@ const app = new Vue({
 }).$mount('#app');
 ```
 
-在终端中，在项目目录下执行`webpack`命令：
+在终端中，在**项目目录**下执行`webpack`命令：
 
 ```
 λ webpack
