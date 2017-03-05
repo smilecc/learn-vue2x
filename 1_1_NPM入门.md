@@ -79,7 +79,7 @@ Is this ok? (yes) yes
 
 ## 安装Vue
 
-这里我们就学习到如何给一个项目安装一个包，之前我们使用过`npm install nrm -g`来给npm安装源管理器，类似的，我们也是使用`npm install`来给一个项目安装包。
+接着我们就使用npm给我们的项目安装vue，之前我们使用过`npm install nrm -g`来给npm安装源管理器，类似的，我们也是使用`npm install`来给一个项目安装包。
 
 首先我们安装的是Vue。
 
