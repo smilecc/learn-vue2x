@@ -82,3 +82,5 @@ webpack output is served from /
 
 ![](/assets/1_3.jpg)
 
+同样`Ctrl+C`可以关闭服务器。
+
