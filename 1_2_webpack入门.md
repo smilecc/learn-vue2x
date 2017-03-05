@@ -52,7 +52,7 @@ module.exports = {
 		filename: "main.out.js" //打包后输出文件的文件名
 	},
 	module: {
-		// 文件规则匹配
+		// 规则匹配
 		rules: [
 		{
 			test: /\.js$/, // 匹配什么文件
@@ -60,6 +60,7 @@ module.exports = {
 			exclude: /node_modules/ // 排除node_modules文件夹
 		}]
 	},
+	// 解释参见 http://cn.vuejs.org/v2/guide/installation.html#独立构建-vs-运行时构建
 	resolve: {
 		alias: {
 			'vue$': 'vue/dist/vue.common.js'
