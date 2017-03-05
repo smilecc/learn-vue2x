@@ -78,7 +78,7 @@ webpack output is served from /
 404s will fallback to /index.html
 ```
 
-这时候我们只需要按照指示，在浏览器中打开http://localhost:8080/，即可看到我们的成果。
+这时候我们只需要按照指示，在浏览器中打开localhost:8080，即可看到我们的成果。
 
 ![](/assets/1_3.jpg)
 
