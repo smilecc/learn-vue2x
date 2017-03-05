@@ -57,3 +57,11 @@ main.out.js  673 kB       0  [emitted]  [big]  main
 
 于是我们的**依赖库和业务代码**都打包到了我们在`webpack.config.js`中指定的`main.out.js`文件中。
 
+这时候大功告成，我们需要一个Web服务器使得我们能看到自己的成果。
+
+## webpack-dev-server
+
+安装webpack-dev-server，这个工具使我们前端开发者拥有一个极度简单的服务器，以助于我们开发，与此同时，他还具有**热更新**功能，可以实时的输出文件。
+
+
+
