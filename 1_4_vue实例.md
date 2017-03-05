@@ -106,14 +106,18 @@ const app = new Vue({
 比如如下的`created`钩子，就将会在实例创建之后被调用。
 
     const app = new Vue({
-    	data: {
-    		a: 1
-    	},
-    	created: function() {
-    		// `this` 指向 vm 实例
-    		console.log('a is: ' + this.a)
-    	}
+        data: {
+            a: 1
+        },
+        created: function() {
+            // `this` 指向 vm 实例
+            console.log('a is: ' + this.a)
+        }
     });
+
+下图所展示的是Vue实例的**整个生命周期**，所有被**红色带有虚线的箭头指着的红色方框**中的内容，就是我们所有可以利用的钩子。
+
+看不懂不要紧，你只需知道当需要的时候可以查阅这张图示就可以了。![](/assets/1_4.png)
 
 
 
