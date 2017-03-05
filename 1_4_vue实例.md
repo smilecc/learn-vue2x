@@ -1,6 +1,6 @@
 ## Vue实例
 
-那么我们来深入我们第一个App的代码吧。
+那么我们来深入了解一下我们第一个App的代码吧。
 
 ## 模块导入
 
@@ -43,5 +43,45 @@ const app = new Vue({
 
 Vue不同于传统的DOM模型操作方式，所有的数据和方法都被包含在构造时传入的选项对象中，而DOM的传统事件则**完全由Vue接管**，所以在Vue中使用jQuery等DOM封装库是不可取的，这不仅会扰乱开发的思路，并且会曾加整个项目文件的大小。
 
-每个Vue实例会**代理**其`data`对象中的所有属性，当这些属性被代理之后，属性会变为**响应的**，
+每个Vue实例会**代理**其`data`对象中的所有属性，当这些属性被代理之后，属性会变为**响应的**，响应的意思就是说，当属性被修改之后，页面上所引用的属性也会跟随着变动，我们用一个例子来说明这个现象。
+
+HTML
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第一个App</title>
+</head>
+<body>
+	<div id="app">
+		<div>{{ random }}</div>
+		<button v-on:click="makeRandom">取随机数</button>
+	</div>
+	<script type="text/javascript" src="main.out.js"></script>
+</body>
+</html>
+```
+
+Javascript
+
+```
+import Vue from 'vue'
+
+const app = new Vue({
+	el: '#app',
+	data () {
+		return {
+			random: 0
+		}
+	},
+	methods: {
+		makeRandom () {
+			this.random = Math.round(Math.random() * 100);
+		}
+	}
+});
+```
+
+
 
