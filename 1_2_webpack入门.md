@@ -110,7 +110,7 @@ module.exports = {
 我们这里使用了babel-loader来加载js文件，所以我们要在npm中安装这个loader。
 
 ```
-npm install babel-loader --save
+npm install babel-loader --save-dev
 ```
 
 当我们安装完毕会注意到下方会多出一行WARN（warring）
@@ -122,8 +122,10 @@ npm WARN babel-loader@6.3.2 requires a peer of babel-core@^6.0.0 but none was in
 这是告诉我们babel-loader依赖于babel-core，而我们却没有安装，所以我们来安装他。
 
 ```
-npm install babel-core --save
+npm install babel-core --save-dev
 ```
+
+这里的`--save-dev`指令作用是将这次安装的包保存到`devDependencies`中，你可以打开`package.json`确认一下，会发现多出了一个`devDependencies`，顾名思义就是这些包是只在开发的时候使用，在发布的时候是不需要打包的。
 
 这样我们安装好了这个loader，于是我们终于可以开始开发基于vue的第一个**hello world**了。
 
