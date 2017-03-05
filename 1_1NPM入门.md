@@ -48,7 +48,7 @@ license: (ISC) --- 协议
 
 所以关键的属性都有默认值了，你可以认真填写，也可以一路回车，都是不影响的，而且之后也可以改。
 
-在填写完最后一项
+在填写完最后一项（license）之后，会按照我们的填写展示我们要生成的配置文件的内容。
 
 ```
 About to write to G:\Code\nodejs\learnvue\package.json:
@@ -69,17 +69,5 @@ About to write to G:\Code\nodejs\learnvue\package.json:
 Is this ok? (yes) yes
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+最后他询问我们`Is this ok?`是否OK，确认则直接回车或输入yes，反之则输入其他的内容就可以取消。
 
