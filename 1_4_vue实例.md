@@ -51,14 +51,14 @@ Vue不同于传统的DOM模型操作方式，所有的数据和方法都被包�
 <!DOCTYPE html>
 <html>
 <head>
-    <title>第一个App</title>
+	<title>随机数</title>
 </head>
 <body>
-    <div id="app">
-        <div>{{ random }}</div>
-        <button v-on:click="makeRandom">取随机数</button>
-    </div>
-    <script type="text/javascript" src="main.out.js"></script>
+	<div id="app">
+		<div>{{ random }}</div>
+		<button v-on:click="makeRandom">取随机数</button>
+	</div>
+	<script type="text/javascript" src="main.out.js"></script>
 </body>
 </html>
 ```
