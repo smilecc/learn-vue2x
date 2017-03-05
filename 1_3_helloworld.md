@@ -55,5 +55,5 @@ main.out.js  673 kB       0  [emitted]  [big]  main
    [3] ./main.js 115 bytes {0} [built]
 ```
 
-
+于是我们的**依赖库和业务代码**都打包到了我们在`webpack.config.js`中指定的`main.out.js`文件中。
 
