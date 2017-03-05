@@ -45,43 +45,45 @@ Vue不同于传统的DOM模型操作方式，所有的数据和方法都被包�
 
 每个Vue实例会**代理**其`data`对象中的所有属性，当这些属性被代理之后，属性会变为**响应的**，响应的意思就是说，当属性被修改之后，页面上所引用的属性也会跟随着变动，我们用一个例子来说明这个现象。
 
-HTML
+**HTML**
 
 ```
 <!DOCTYPE html>
 <html>
 <head>
-	<title>第一个App</title>
+    <title>第一个App</title>
 </head>
 <body>
-	<div id="app">
-		<div>{{ random }}</div>
-		<button v-on:click="makeRandom">取随机数</button>
-	</div>
-	<script type="text/javascript" src="main.out.js"></script>
+    <div id="app">
+        <div>{{ random }}</div>
+        <button v-on:click="makeRandom">取随机数</button>
+    </div>
+    <script type="text/javascript" src="main.out.js"></script>
 </body>
 </html>
 ```
 
-Javascript
+**Javascript**
 
 ```
 import Vue from 'vue'
 
 const app = new Vue({
-	el: '#app',
-	data () {
-		return {
-			random: 0
-		}
-	},
-	methods: {
-		makeRandom () {
-			this.random = Math.round(Math.random() * 100);
-		}
-	}
+    el: '#app',
+    data () {
+        return {
+            random: 0
+        }
+    },
+    methods: {
+        makeRandom () {
+            this.random = Math.round(Math.random() * 100);
+        }
+    }
 });
 ```
 
+这是一个很简单的随机数生成，页面上的“取随机数”按钮每点一次，页面上的数字就是重新随机一个。
 
+我们可以看到我们使用`v-on:click`属性给这个按钮的onclick事件绑定了一个函数，而这个函数就是`methods`属性中的`makeRandom`函数。
 
