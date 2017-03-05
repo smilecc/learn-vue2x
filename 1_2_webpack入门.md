@@ -39,7 +39,7 @@ npm install webpack@2.2.1 --save
 
 当配置文件名为webpack.config.js的时候，webpack会自动加载这个文件，如果想叫其他名字，也可以手动指定，详细内容可以参见webpack的[文档](https://webpack.js.org/configuration/)，这里就不赘述了。
 
-将如下配置内容添加到刚才建立的配置文件中。
+将如下配置内容保存到刚才建立的配置文件中。
 
 ```
 var path = require('path');
