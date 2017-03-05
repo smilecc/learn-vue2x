@@ -16,7 +16,7 @@ import Vue from 'vue'
 
 ## 构造器
 
-接下来我们使用Vue提供的**构造函数**，对Vue进行了实例化。
+接下来我们使用Vue提供的**构造函数**，实例化了一个Vue的根实例。
 
 ```
 const app = new Vue({
