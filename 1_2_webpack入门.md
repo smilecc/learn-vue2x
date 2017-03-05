@@ -105,5 +105,5 @@ module.exports = {
 
 所谓loader，就是加载器，为什么要有loader呢，例如我们想使用ES2015语法，但主流浏览器却不支持，我们就想办法通过一个预处理机制，把我们的代码通过一个loader解析成正确的内容。
 
-类似的还有用来加载scss的loader，以及我们伴随我们日后的vue-loader。
+类似的还有用来加载scss的loader、用于加载图片文件的file-loader，以及我们伴随我们日后的vue-loader。
 
