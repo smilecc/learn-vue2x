@@ -14,13 +14,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>第一个App</title>
+    <title>第一个App</title>
 </head>
 <body>
-	<div id="app">
-		{{ msg }}
-	</div>
-	<script type="text/javascript" src="main.out.js"></script>
+    <div id="app">
+        {{ msg }}
+    </div>
+    <script type="text/javascript" src="main.out.js"></script>
 </body>
 </html>
 ```
@@ -31,12 +31,28 @@
 import Vue from 'vue'
 
 const app = new Vue({
-	data () {
-		return {
-			msg: 'hello world!'
-		}
-	}
+    data () {
+        return {
+            msg: 'hello world!'
+        }
+    }
 }).$mount('#app');
+```
+
+在终端中，在项目目录下执行`webpack`命令：
+
+```
+λ webpack
+
+Hash: 76c655b496b5c09bd418
+Version: webpack 2.2.1
+Time: 805ms
+      Asset    Size  Chunks                    Chunk Names
+main.out.js  673 kB       0  [emitted]  [big]  main
+   [0] ./~/vue/dist/vue.common.js 242 kB {0} [built]
+   [1] ./~/process/browser.js 5.3 kB {0} [built]
+   [2] (webpack)/buildin/global.js 509 bytes {0} [built]
+   [3] ./main.js 115 bytes {0} [built]
 ```
 
 
