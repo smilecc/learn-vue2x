@@ -26,18 +26,20 @@ const app = new Vue({
 
 在实例化 Vue 时，需要传入一个**选项对象**，它可以包含数据、模板、挂载元素、方法、生命周期钩子等选项。全部的选项可以在 [API 文档](http://cn.vuejs.org/v2/api/)中查看。
 
-于是在我们的Hello world例子中传递的选项是这样的。
+于是在我们的Hello world例子中传递的选项是这样的：
 
 ```
 {
-	el: '#app',
-	data () {
-		return {
-			msg: 'hello world'
-		}
-	}
+    el: '#app',
+    data () {
+        return {
+            msg: 'hello world'
+        }
+    }
 }
 ```
+
+## 属性与方法
 
 
 
