@@ -51,14 +51,14 @@ Vue不同于传统的DOM模型操作方式，所有的数据和方法都被包�
 <!DOCTYPE html>
 <html>
 <head>
-	<title>随机数</title>
+    <title>随机数</title>
 </head>
 <body>
-	<div id="app">
-		<div>{{ random }}</div>
-		<button v-on:click="makeRandom">取随机数</button>
-	</div>
-	<script type="text/javascript" src="main.out.js"></script>
+    <div id="app">
+        <div>{{ random }}</div>
+        <button v-on:click="makeRandom">取随机数</button>
+    </div>
+    <script type="text/javascript" src="main.out.js"></script>
 </body>
 </html>
 ```
@@ -92,9 +92,28 @@ const app = new Vue({
 这个例子可以说明很多事情：
 
 * `data`对象中的被代理的属性为**动态**的
+* `this`指向的是当前的实例对象
 * `data`对象在方法中使用`this`就可以访问的到
 * 方法（函数）写在`methods`对象之中
 * 通过`v-on`可以监听事件，在这里我们监听的是`click`事件
+
+## 生命周期
+
+每个 Vue 实例在被创建之前都要经过一系列的初始化过程，在每个过程的开始或结束的时候，我们可以利用**生命周期钩子**，来实现我们自己的逻辑。
+
+所谓钩子（Hook），听起来有点抽象，简单的来说就是**一种事件机制**，在**某个时间点框架会自动调用**我们开发者所编写的函数，这样我们就能参与到整个生命周期之中去，比如我们可以决定在实例初始化的时候干什么，在实例销毁的时候干什么，钩子就是起到这个作用。
+
+比如如下的`created`钩子，就将会在实例创建之后被调用。
+
+    const app = new Vue({
+    	data: {
+    		a: 1
+    	},
+    	created: function() {
+    		// `this` 指向 vm 实例
+    		console.log('a is: ' + this.a)
+    	}
+    });
 
 
 
