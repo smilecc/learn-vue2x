@@ -87,7 +87,7 @@ module.exports = {
 
 ### 入口文件
 
-首先我们要建立我们的入口文件，我这里建立了一个名叫main.js的文件。
+首先我们要建立我们的入口文件，我这里建立了一个名叫main.js的js文件。
 
 `__dirname`这个变量存储的是我们当前配置文件的路径，所以`__dirname + '/main.js'`意为使用当前配置文件路径下的main.js作为入口文件。
 
@@ -106,4 +106,24 @@ module.exports = {
 所谓loader，就是加载器，为什么要有loader呢，例如我们想使用ES2015语法，但主流浏览器却不支持，我们就想办法通过一个预处理机制，把我们的代码通过一个loader解析成正确的内容。
 
 类似的还有用来加载scss的loader、用于加载图片文件的file-loader，以及我们伴随我们日后的vue-loader。
+
+我们这里使用了babel-loader来加载js文件，所以我们要在npm中安装这个loader。
+
+```
+npm install babel-loader --save
+```
+
+当我们安装完毕会注意到下方会多出一行WARN（warring）
+
+```
+npm WARN babel-loader@6.3.2 requires a peer of babel-core@^6.0.0 but none was installed.
+```
+
+这是告诉我们babel-loader依赖于babel-core，而我们却没有安装，所以我们来安装他。
+
+```
+npm install babel-core --save
+```
+
+这样我们安装好了这个loader，于是我们终于可以开始开发基于vue的第一个的**hello world**了。
 
