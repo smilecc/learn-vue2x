@@ -63,5 +63,26 @@ main.out.js  673 kB       0  [emitted]  [big]  main
 
 安装webpack-dev-server，这个工具使我们前端开发者拥有一个极度简单的服务器，以助于我们开发，与此同时，他还具有**热更新**功能，可以实时的输出文件。
 
+安装：
+
+```
+npm install webpack-dev-server --save-dev
+```
+
+安装完毕之后我们直接在当前的项目目录中执行`webpack-dev-server`命令，来开启一个简易服务器。
+
+```
+λ webpack-dev-server
+Project is running at http://localhost:8080/
+webpack output is served from /
+404s will fallback to /index.html
+```
+
+这时候我们只需要按照指示，在浏览器中打开http://localhost:8080/，即可看到我们的成果。
+
+![](/assets/1_3.jpg)
+
+
+
 
 
