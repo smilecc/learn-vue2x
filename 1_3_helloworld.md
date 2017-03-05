@@ -31,12 +31,13 @@
 import Vue from 'vue'
 
 const app = new Vue({
-    data () {
-        return {
-            msg: 'hello world!'
-        }
-    }
-}).$mount('#app');
+	el: '#app',
+	data () {
+		return {
+			msg: 'hello world'
+		}
+	}
+});
 ```
 
 在终端中，在**项目目录**下执行`webpack`命令：
