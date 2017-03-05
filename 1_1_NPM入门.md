@@ -79,7 +79,13 @@ Is this ok? (yes) yes
 
 ## 安装Vue
 
-这里我们就学习到如何给一个
+这里我们就学习到如何给一个项目安装一个库，之前我们使用过`npm install nrm -g`来给npm安装源管理器，类似的，我们也是使用`npm install`来给一个项目安装库。
+
+首先我们安装的是Vue。
+
+    λ npm install vue --save
+    learnvue@1.0.0 G:\Code\nodejs\learnvue
+    `-- vue@2.2.1
 
 
 
