@@ -77,11 +77,11 @@ module.exports = {
 }
 ```
 
-在配置文件中，有以下几个至关重要的部分，至于其他的部分，可以参见webpack文档（英文的）。
+在配置文件中，有以下几个至关重要的部分：
 
 * entry（入口文件）
 * output（出口文件）
 * module -&gt; rules（loader的规则）
 
-
+至于其他的部分，可以参见webpack文档（英文的）。
 
