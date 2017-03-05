@@ -8,7 +8,7 @@ Node.js是一个Javascript的运行环境，简单的来说：他把Javascript�
 
 下载地址为[https://nodejs.org/en/](https://nodejs.org/en/)
 
-![](https://smilecc.gitbooks.io/learn-vue2x/content/assets/1_1.jpg)
+![](/assets/1_1.jpg)
 
 官网上目前有两个版本，一个是LTS版，另外一个是Current版，所谓的LTS，就是长期维护版，所以我们下载这个LTS版本就好了。
 
@@ -48,7 +48,6 @@ npm install nrm -g
   rednpm - http://registry.mirror.cqupt.edu.cn/
   npmMirror  https://skimdb.npmjs.com/registry/
   edunpm - http://registry.enpmjs.org/
-
 ```
 
 可以看到列出了若干个源，`nrm ls`命令会在当前使用的源前方加\*号来提示用户，其中`cnpm`和`taobao`两个源为中国人提供的源。
