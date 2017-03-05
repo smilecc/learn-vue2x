@@ -79,7 +79,7 @@ Is this ok? (yes) yes
 
 ## 安装Vue
 
-这里我们就学习到如何给一个项目安装一个库，之前我们使用过`npm install nrm -g`来给npm安装源管理器，类似的，我们也是使用`npm install`来给一个项目安装库。
+这里我们就学习到如何给一个项目安装一个包，之前我们使用过`npm install nrm -g`来给npm安装源管理器，类似的，我们也是使用`npm install`来给一个项目安装包。
 
 首先我们安装的是Vue。
 
@@ -87,5 +87,11 @@ Is this ok? (yes) yes
     learnvue@1.0.0 G:\Code\nodejs\learnvue
     `-- vue@2.2.1
 
+安装完毕之后，你会发现你的项目文件夹中多出了一个叫`node_modules`的文件夹，这个文件夹就是用来存储包的文件的。
 
+之前我们安装nrm的时候使用了一个`-g`的指令，这个指令实际上的意思是global（全局的）。
+
+而这里我们使用了一个`--save`的指令，是因为如果直接执行`npm install vue`的话，这样安装的包将仅仅出现在`node_modules`文件夹中，而不会出现在我们的package.json中。
+
+将使用的包名写入package.json文件的意义是，当我们要备份、迁移项目的时候，我们不需要连带庞大的`node_modules`文件夹拷贝，而是只需要将package.json拷贝走，在新的项目目录中重新执行`npm install`就可以直接从包管理器中拉取我们项目依赖的包了。
 
