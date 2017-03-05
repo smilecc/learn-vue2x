@@ -6,4 +6,5 @@
   * [1.NPM入门](1_1_NPM入门.md)
   * [2.Webpack入门](1_2_webpack入门.md)
   * [3.第一个App](1_3_helloworld.md)
+  * [4.Vue实例](1_4_vue实例.md)
 
