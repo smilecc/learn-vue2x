@@ -82,7 +82,3 @@ webpack output is served from /
 
 ![](/assets/1_3.jpg)
 
-
-
-
-
