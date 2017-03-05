@@ -25,5 +25,11 @@ npm install webpack@2.2.1 -g
 2.2.1
 ```
 
+安装完毕之后，由于我们的项目依赖于webpack，所以我们要把webpack加入到我们的package.json中，不用手动修改，直接再install一遍。
+
+```
+npm install webpack@2.2.1 --save
+```
+
 
 
