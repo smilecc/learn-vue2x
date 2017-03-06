@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RGB</title>
+	<style type="text/css">
+		.canvas {
+			width: 200px;
+			height: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<div v-bind:style="calcColor" class="canvas"></div>
+		
+		<div>
+			<span>红</span>
+			<input type="range" min="0" max="255" step="1" v-model="red" />
+		</div>
+		<div>
+			<span>绿</span>
+			<input type="range" min="0" max="255" step="1" v-model="green" />
+		</div>
+		<div>
+			<span>蓝</span>
+			<input type="range" min="0" max="255" step="1" v-model="blue" />
+		</div>
+		<button @click="getRGB">获取当前RGB</button>
+	</div>
+	<script type="text/javascript" src="main.out.js"></script>
+</body>
+</html>
