@@ -16,14 +16,17 @@
 		<div>
 			<span>红</span>
 			<input type="range" min="0" max="255" step="1" v-model="red" />
+			<span>{{ red }}</span>
 		</div>
 		<div>
 			<span>绿</span>
 			<input type="range" min="0" max="255" step="1" v-model="green" />
+			<span>{{ green }}</span>
 		</div>
 		<div>
 			<span>蓝</span>
 			<input type="range" min="0" max="255" step="1" v-model="blue" />
+			<span>{{ blue }}</span>
 		</div>
 		<button @click="getRGB">获取当前RGB</button>
 	</div>
