@@ -10,7 +10,13 @@
 
 由于作者水平有限，文章中如有错误的观点或者看法，请您指出，谢谢。
 
-##  {#注意}
+## 事项 {#注意}
+
+这篇教程由璨编写，转载请注明出处。
+
+[在线阅读](https://smilecc.gitbooks.io/learn-vue2x/)
+
+[参与编辑（Github）](https://github.com/smilecc/learn-vue2x)
 
 
 
