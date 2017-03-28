@@ -4,7 +4,7 @@
 
 ## 模块导入
 
-```
+```js
 import Vue from 'vue'
 ```
 
