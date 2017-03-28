@@ -10,7 +10,7 @@
 
 **index.html：**
 
-```
+```HTML
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,16 +27,16 @@
 
 **main.js：**
 
-```
+```js
 import Vue from 'vue'
 
 const app = new Vue({
-	el: '#app',
-	data () {
-		return {
-			msg: 'hello world'
-		}
-	}
+    el: '#app',
+    data () {
+        return {
+            msg: 'hello world'
+        }
+    }
 });
 ```
 
