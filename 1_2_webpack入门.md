@@ -41,7 +41,7 @@ npm install webpack@2.2.1 --save
 
 将如下配置内容保存到刚才建立的配置文件中。
 
-```
+```js
 var path = require('path');
 var webpack = require('webpack');
 
