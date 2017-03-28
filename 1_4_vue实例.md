@@ -18,7 +18,7 @@ import Vue from 'vue'
 
 接下来我们使用Vue提供的**构造函数**，实例化了一个Vue的根实例。
 
-```
+```js
 const app = new Vue({
     // 选项
 })
@@ -28,7 +28,7 @@ const app = new Vue({
 
 于是在我们的Hello world例子中传递的选项是这样的：
 
-```
+```js
 {
     el: '#app',
     data () {
